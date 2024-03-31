@@ -1,10 +1,10 @@
-import { helloWorld } from "./cfg/database.js"
+import { helloWorld, question1Query} from "./cfg/database.js"
 
 /**
  * Combien y a t il de salarié en date du 2022-08-08 ?
  */
-function question1()  {
-    return ""
+async function question1()  {
+    return await question1Query();
 }
 
 /**
@@ -48,7 +48,7 @@ function question6()  {
 }
 
 /**
- * Calculer la somme des primes de cooptation de michel sur les mois de novembre 2023.
+ * Calculer la somme des primes de cooptation de michel sur les mois de novembre 2023. LES MOIS DE NOVEMBRE ???
  *  
  */
 function question7()  {
@@ -79,10 +79,10 @@ function question10()  {
     return ""
 }
 
-console.log(await helloWorld())
+//console.log(await helloWorld())
 console.log("======================================================================")
 console.log("RESULT :")
-console.log("question 1 :",question1())
+console.log("question 1 :",await question1())
 console.log("question 2 :",question2())
 console.log("question 3 :",question3())
 console.log("question 4 :",question4())

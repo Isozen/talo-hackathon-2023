@@ -16,4 +16,4 @@ services:
       - database
     # build: java
     # build: python
-    # build: nodejs
+    build: nodejs
